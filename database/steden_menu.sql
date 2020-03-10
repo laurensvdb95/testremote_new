@@ -1,0 +1,10 @@
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (1, 'Home', 'steden.php', 1);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (2, 'Over ons', 'over_ons.php', 2);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (3, 'Vacatures', 'vacatures.php', 3);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (4, 'Contact', 'contact.php', 4);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (5, 'Afmelden', 'lib/logout.php', 20);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (6, 'Weekoverzicht', 'week.php', 6);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (7, 'File Upload', 'file_upload.php', 7);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (8, 'Mijn historiek', 'historiek.php', 8);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (9, 'Download taken', 'download_taken.php', 9);
+INSERT INTO steden.menu (men_id, men_caption, men_destination, men_order) VALUES (10, 'Mijn profiel', 'profiel.php', 10);

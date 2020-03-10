@@ -1,0 +1,2 @@
+INSERT INTO steden.country (img_id, img_filename, img_title, img_width, img_height, img_capital) VALUES (1, 'spain', 'spain', '2500', '3200', 'Madrid');
+INSERT INTO steden.country (img_id, img_filename, img_title, img_width, img_height, img_capital) VALUES (2, 'Croatia', 'croatia', '3500', '2100', 'Zagreb');
