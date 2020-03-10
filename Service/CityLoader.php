@@ -8,7 +8,7 @@ class CityLoader
         $this->DBM = $DBM;
     }
 
-    public function Load( $id = null )
+    public function LoadCity( $id = null )
     {
         $cities = array();
 
@@ -25,6 +25,7 @@ class CityLoader
             $city->setTitle( $row['img_title'] );
             $city->setWidth( $row['img_width'] );
             $city->setHeight( $row['img_height'] );
+            $city->setCountry( $row['img_country'] );
 
             $cities[] = $city;
         }

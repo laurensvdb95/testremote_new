@@ -1,13 +1,13 @@
 
 
-    <div class="col-sm-4 float_left">
+<div class="col-sm-4 float_left">
 
-        <form id="form_stad" method="post" action="lib/save.php">
+    <form id="form_country" method="post" action="lib/save.php">
 
-            <input type="hidden" id="formname" name="formname" value="stad_form">
-            <input type="hidden" id="afterinsert" name="afterinsert" value="steden.php">
-            <input type="hidden" id="tablename" name="tablename" value="images">
-            <input type="hidden" id="pkey" name="pkey" value="img_id">
+        <input type="hidden" id="formname" name="formname" value="country_form">
+        <input type="hidden" id="afterinsert" name="afterinsert" value="steden.php">
+        <input type="hidden" id="tablename" name="tablename" value="country">
+        <input type="hidden" id="pkey" name="pkey" value="img_id">
 
         <div class="form-group">
 
@@ -57,25 +57,23 @@
 
         <div class="form-group">
 
-            <label for="img_country" class="col-form-label">Country</label>
+            <label for="img_capital" class="col-form-label">capital</label>
             <div>
-                <input type="text" class="form-control" id="img_country" name="img_country" value="@@img_country@@">
+                <input type="text" class="form-control" id="img_capital" name="img_capital" value="@@img_capital@@">
             </div>
 
         </div>
 
         <input name=savebutton type="submit" value="Save">
 
-        </form>
+    </form>
 
-    </div>
+</div>
 
-    <div class="col-sm-8 float_left">
-            <img class="img-fluid img_city" src=img/@@img_filename@@.jpg>
-    </div>
+<div class="col-sm-8 float_left">
+    <img class="img-fluid img_city" src=img/@@img_filename@@.jpg>
+</div>
 
 
 
 <br>
-
-

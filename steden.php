@@ -23,12 +23,19 @@ $MS->ShowMessages();
     <div class="row">
 
         <?php
-        $cities = $Container->getCityLoader()->Load();
+        $cities = $Container->getCityLoader()->LoadCity();
         $template = $VS->LoadTemplate("steden");
 
         print $VS->ReplaceCities( $cities, $template);
         ?>
 
+    </div>
+    <div class="row">
+        <?php
+        $countries = $Container->getCountryLoader()->LoadCountry();
+        $template = $VS->LoadTemplate("landen");
+        print $VS->ReplaceCountries($countries, $template);
+        ?>
     </div>
 </div>
 

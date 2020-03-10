@@ -1,17 +1,20 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/testremote/Model/Config.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/testremote_new/Model/Config.php";
 
-$config = new Config( $path = "/testremote" );
+$config = new Config( $path = "/testremote_new" );
 $_application_folder = $config->getApplicationFolder();
 $_root_folder = $config->getRootFolder();
 
 //load Models
+require_once $_root_folder . "/Model/AbstractPlace.php";
 require_once $_root_folder . "/Model/City.php";
+require_once $_root_folder . "/Model/Country.php";
 require_once $_root_folder . "/Model/User.php";
 
 //load Services
 require_once $_root_folder . "/Service/Authentication.php";
 require_once $_root_folder . "/Service/CityLoader.php";
+require_once $_root_folder . "/Service/CountryLoader.php";
 require_once $_root_folder . "/Service/Container.php";
 require_once $_root_folder . "/Service/DBManager.php";
 require_once $_root_folder . "/Service/MessageService.php";

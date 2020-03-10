@@ -11,9 +11,9 @@ class Config
     private $application_folder = "";
     private $root_folder;
 
-    private $db_dsn = 'mysql:host=185.115.218.166;dbname=wdev_steven';
-    private $db_user = 'wdev_steven';
-    private $db_pass = 'DCouV9xb4PwF';
+    private $db_dsn = 'mysql:host=localhost;dbname=steden';
+    private $db_user = 'root';
+    private $db_pass = 'laurensVDB95';
 
     public function __construct( $path )
     {

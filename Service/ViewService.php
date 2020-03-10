@@ -102,6 +102,27 @@ class ViewService
             $content = str_replace("@@img_filename@@", $city->getFileName(), $content);
             $content = str_replace("@@img_width@@", $city->getWidth(), $content);
             $content = str_replace("@@img_height@@", $city->getHeight(), $content);
+            $content = str_replace("@@img_country@@", $city->getCountry(), $content);
+
+            $returnval .= $content;
+        }
+
+        return $returnval;
+    }
+
+    function ReplaceCountries( $countries, $template_html )
+    {
+        $returnval = "";
+
+        foreach ( $countries as $country )
+        {
+            $content = $template_html;
+            $content = str_replace("@@img_id@@", $country->getId(), $content);
+            $content = str_replace("@@img_title@@", $country->getTitle(), $content);
+            $content = str_replace("@@img_filename@@", $country->getFileName(), $content);
+            $content = str_replace("@@img_width@@", $country->getWidth(), $content);
+            $content = str_replace("@@img_height@@", $country->getHeight(), $content);
+            $content = str_replace("@@img_capital@@", $country->getCapital(), $content);
 
             $returnval .= $content;
         }

@@ -7,6 +7,7 @@ class Container
     private $viewService;
     private $messageService;
     private $cityLoader;
+    private $countryLoader;
     private $uploadService;
     private $authentication;
 
@@ -66,7 +67,15 @@ class Container
             $this->cityLoader = new CityLoader( $this->getDBM() );
         }
         return $this->cityLoader;
-    }    
+    }
+
+    public function getCountryLoader()
+    {
+        if ( $this->countryLoader === null ){
+            $this->countryLoader = new CountryLoader( $this->getDBM() );
+        }
+        return $this->countryLoader;
+    }
 
     /**
      * @return MessageService

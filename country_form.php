@@ -7,17 +7,17 @@ $VS->BasicHead( $css );
 <body>
 
 <div class="jumbotron text-center">
-    <h1>Formulier Stad</h1>
+    <h1>Formulier Land</h1>
 </div>
 
 <div class="container">
     <div class="row">
 
         <?php
-        $cities = $Container->getCityLoader()->LoadCity( $id = $_GET['id'] );
-        $template = $VS->LoadTemplate("stad_form");
+        $countries = $Container->getCountryLoader()->LoadCountry( $id = $_GET['id'] );
+        $template = $VS->LoadTemplate("country_form");
 
-        print $VS->ReplaceCities( $cities, $template);
+        print $VS->ReplaceCountries( $countries, $template);
         ?>
 
     </div>

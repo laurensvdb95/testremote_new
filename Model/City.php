@@ -1,90 +1,16 @@
 <?php
-class City
+class City extends AbstractPlace
 {
-    private $id;
-    private $filename;
-    private $title;
-    private $width;
-    private $height;
+    private $Country;
 
-    /**
-     * @return mixed
-     */
-    public function getId()
+    public function getCountry()
     {
-        return $this->id;
+        return $this->Country;
     }
 
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
+    public function setCountry($Country)
     {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFileName()
-    {
-        return $this->filename;
-    }
-
-    /**
-     * @param mixed $name
-     */
-    public function setFileName($name)
-    {
-        $this->filename = $name;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTitle()
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param mixed $title
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getWidth()
-    {
-        return $this->width;
-    }
-
-    /**
-     * @param mixed $width
-     */
-    public function setWidth($width)
-    {
-        $this->width = $width;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getHeight()
-    {
-        return $this->height;
-    }
-
-    /**
-     * @param mixed $height
-     */
-    public function setHeight($height)
-    {
-        $this->height = $height;
+        $this->Country = $Country;
     }
 
 
