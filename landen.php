@@ -14,22 +14,23 @@ $MS->ShowMessages();
 
 <div class="jumbotron text-center">
     <h1>Leuke plekken in Europa</h1>
-    <p>Tips voor citytrips voor vrolijke vakantiegangers!</p>
+    <p>Landen die je moet bezocht hebben!</p>
 </div>
 
 <?php $VS->PrintNavBar(); ?>
 
+
+
 <div class="container">
     <div class="row">
-
         <?php
-        $cities = $Container->getCityLoader()->LoadCity();
-        $template = $VS->LoadTemplate("steden");
-
-        print $VS->ReplaceCities( $cities, $template);
+        $countries = $Container->getCountryLoader()->LoadCountry();
+        $template = $VS->LoadTemplate("landen");
+        print $VS->ReplaceCountries($countries, $template);
         ?>
-
     </div>
+
+
 </div>
 
 </body>
